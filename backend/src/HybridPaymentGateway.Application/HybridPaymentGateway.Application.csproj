@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HybridPaymentGateway.Domain\HybridPaymentGateway.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+    <Folder Include="UseCases\ISO20022\" />
+    <Folder Include="UseCases\Bitcoin\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+
+</Project>

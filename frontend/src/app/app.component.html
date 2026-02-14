@@ -1,0 +1,89 @@
+<div class="app-container">
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1>
+          <span class="icon">💳</span>
+          {{ title }}
+        </h1>
+        <nav class="nav">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
+          <a routerLink="/payments" routerLinkActive="active">Payments</a>
+          <a routerLink="/bitcoin" routerLinkActive="active">Bitcoin</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Router outlet for components -->
+      <router-outlet></router-outlet>
+
+      <!-- Default dashboard if no routes are active -->
+      <div class="dashboard" *ngIf="!hasActiveRoute()">
+        <div class="welcome-card card">
+          <h2>🚀 Welcome to Hybrid Payment Gateway</h2>
+          <p>A modern payment processing system supporting both ISO 20022 and Bitcoin transactions.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card card">
+            <div class="feature-icon">🏦</div>
+            <h3>ISO 20022 Payments</h3>
+            <p>Process SEPA and international payments using the ISO 20022 standard.</p>
+            <button class="btn btn-primary" routerLink="/payments">Manage Payments</button>
+          </div>
+
+          <div class="feature-card card">
+            <div class="feature-icon">₿</div>
+            <h3>Bitcoin Transactions</h3>
+            <p>Send and receive Bitcoin payments with real-time blockchain integration.</p>
+            <button class="btn btn-primary" routerLink="/bitcoin">Bitcoin Wallet</button>
+          </div>
+
+          <div class="feature-card card">
+            <div class="feature-icon">📊</div>
+            <h3>Transaction History</h3>
+            <p>View and track all your payment transactions in one place.</p>
+            <button class="btn btn-secondary">View History</button>
+          </div>
+
+          <div class="feature-card card">
+            <div class="feature-icon">⚙️</div>
+            <h3>API Integration</h3>
+            <p>RESTful API ready for integration with your existing systems.</p>
+            <button class="btn btn-secondary">API Docs</button>
+          </div>
+        </div>
+
+        <div class="info-section card">
+          <h3>📚 Getting Started</h3>
+          <ol>
+            <li>Configure your backend API endpoint in <code>src/environments/environment.ts</code></li>
+            <li>Create payment components in <code>src/app/components/</code></li>
+            <li>Use the provided services to connect to the HybridPaymentGateway API</li>
+            <li>Customize the UI to match your branding</li>
+          </ol>
+        </div>
+
+        <div class="tech-stack card">
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-badges">
+            <span class="badge badge-info">Angular 17</span>
+            <span class="badge badge-info">.NET 8 API</span>
+            <span class="badge badge-info">TypeScript</span>
+            <span class="badge badge-info">RxJS</span>
+            <span class="badge badge-success">Clean Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Hybrid Payment Gateway. Built with Angular & .NET 8</p>
+    </div>
+  </footer>
+</div>
