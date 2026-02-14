@@ -178,7 +178,6 @@ npm run build
 - Netlify / Vercel
 - Any static hosting
 
-See [deployment guide](./docs/DEPLOYMENT.md) for details.
 
 ## 🏛️ Architecture
 
@@ -219,10 +218,6 @@ See [deployment guide](./docs/DEPLOYMENT.md) for details.
 - [ ] Implement logging & monitoring
 - [ ] Security audit
 
-## 🤝 Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
-
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
@@ -233,25 +228,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Your Name**
-- Senior .NET Developer
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Clean Architecture by Robert C. Martin
-- ISO 20022 Standard
-- Bitcoin Core developers
-- Angular team
-
-## 📞 Support
-
-For questions or support:
-- Open an [issue](https://github.com/yourusername/HybridPaymentGateway/issues)
-- Discussions in [Discussions](https://github.com/yourusername/HybridPaymentGateway/discussions)
+#
 
 ---
 
